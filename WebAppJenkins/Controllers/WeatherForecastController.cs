@@ -26,7 +26,8 @@ namespace WebAppJenkins.Controllers
             {
                 Date = DateTime.Now.AddDays(index),
                 TemperatureC = Random.Shared.Next(-20, 55),
-                Summary = Summaries[Random.Shared.Next(Summaries.Length)]
+                Summary = Summaries[Random.Shared.Next(Summaries.Length)],
+                Id = random.Next(1, 999999)
             })
             .ToArray();
         }
@@ -37,7 +38,8 @@ namespace WebAppJenkins.Controllers
             {
                 Date = DateTime.Now.AddDays(index),
                 TemperatureC = Random.Shared.Next(-20, 55),
-                Summary = Summaries[Random.Shared.Next(Summaries.Length)]
+                Summary = Summaries[Random.Shared.Next(Summaries.Length)],
+                Id = random.Next(1, 999999)
             })
             .ToArray();
         }
